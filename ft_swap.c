@@ -6,9 +6,13 @@
 /*   By: jholopai <jholopai@hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/11 19:22:16 by jholopai          #+#    #+#             */
-/*   Updated: 2020/08/11 19:25:12 by jholopai         ###   ########.fr       */
+/*   Updated: 2020/08/12 22:50:42 by jholopai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Swaps the values of a and b.
+*/
 
 void	ft_swap(int *a, int *b)
 {

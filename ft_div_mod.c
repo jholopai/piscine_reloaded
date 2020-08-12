@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jholopai <jholopai@hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/11 19:17:52 by jholopai          #+#    #+#             */
-/*   Updated: 2020/08/12 22:50:01 by jholopai         ###   ########.fr       */
+/*   Created: 2020/08/12 22:41:07 by jholopai          #+#    #+#             */
+/*   Updated: 2020/08/12 22:45:40 by jholopai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Changes nbr's value into 42.
+** Result from a being divided by b is saved into div.
+** The modulo is saved into mod.
 */
 
-void	ft_ft(int *nbr)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	*nbr = 42;
+	*div = a / b;
+	*mod = a % b;
 }
