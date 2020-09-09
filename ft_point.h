@@ -1,35 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jholopai <jholopai@hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/06 18:05:37 by jholopai          #+#    #+#             */
-/*   Updated: 2020/09/09 20:09:08 by jholopai         ###   ########.fr       */
+/*   Created: 2020/09/09 19:58:22 by jholopai          #+#    #+#             */
+/*   Updated: 2020/09/09 20:06:50 by jholopai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Returns a duplicate of the given string. Allowed functions: malloc.
+** Creates a struct [s_point] which holds two integer variables.
 */
 
-char	*ft_strdup(char *src)
-{
-	int		i;
-	char	*duplicate;
+#ifndef FT_POINT_H
+# define FT_POINT_H
 
-	if (src)
-	{
-		i = 0;
-		while (src[i] != '\0')
-			i++;
-		duplicate = (char*)malloc(i * sizeof(char) + 1);
-		while (i >= 0)
-		{
-			duplicate[i] = src[i];
-			i--;
-		}
-		return (duplicate);
-	}
-}
+typedef	struct	s_point
+{
+	int x;
+	int y;
+}				t_point;
+#endif
